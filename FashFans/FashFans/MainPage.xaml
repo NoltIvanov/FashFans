@@ -3,6 +3,7 @@
     x:Class="FashFans.MainPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
     xmlns:local="clr-namespace:FashFans">
 
     <StackLayout>
@@ -13,13 +14,19 @@
             Text="Welcome to Xamarin.Forms!"
             VerticalOptions="CenterAndExpand" />
         <Label
-            HorizontalOptions="Center"
             FontFamily="{StaticResource SFProRegular}"
+            HorizontalOptions="Center"
             Text="Welcome to Xamarin.Forms!"
             VerticalOptions="CenterAndExpand" />
+        <ffimageloadingsvg:SvgCachedImage
+            Margin="0,0,0,0"
+            Aspect="AspectFit"
+            HeightRequest="50"
+            Source="resource://FashFans.Resources.Images.ic_password.svg"
+            WidthRequest="50" />
         <Label
-            HorizontalOptions="Center"
             FontFamily="{StaticResource SFProThin}"
+            HorizontalOptions="Center"
             Text="Welcome to Xamarin.Forms!"
             VerticalOptions="CenterAndExpand" />
         <Label
